@@ -2,7 +2,6 @@ package patterns.builder;
 
 import patterns.builder.vehiculeTypes.Bus;
 import patterns.builder.vehiculeTypes.Car;
-import patterns.builder.Vehicule;
 import patterns.builder.vehiculeTypes.Motocycle;
 
 /**
