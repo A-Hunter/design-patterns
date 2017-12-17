@@ -7,11 +7,11 @@ public class Context {
 
     public Strategy strategy;
 
-    public Context(Strategy strategy) {
+    Context(Strategy strategy) {
         this.strategy = strategy;
     }
 
-    public void executeRoute(String argument){
+    void executeRoute(String argument){
         strategy.route(argument);
     }
 }
