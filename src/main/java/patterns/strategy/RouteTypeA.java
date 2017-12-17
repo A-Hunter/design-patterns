@@ -18,12 +18,12 @@ public class RouteTypeA implements RouteBuilderInterface {
     @Override
     public String buildRoute(Route route) {
 
-        RouteContextA r = (RouteContextA) route;
+        RouteContextA contextA = (RouteContextA) route;
         AtomicBoolean append = new AtomicBoolean(true);
         StringBuilder b = new StringBuilder(currentTime());
-        r.forEach(identifier -> {
+        contextA.forEach(identifier -> {
             if (append.compareAndSet(true, false)) {
-                b.append("-").append(r.type.name())
+                b.append("-").append(contextA.type.name())
                         .append("-").append(currentTime());
             }
 
