@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * Created by Ghazi Ennacer on 12/04/2017.
  */
-public class RouteTypeE implements RouteBuilderInterface {
+public class RouteTypeE implements RouteTypeInterface {
 
     public RouteTypeE() {
         super();

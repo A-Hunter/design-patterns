@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * Created by Ghazi Ennacer on 12/04/2017.
  */
-public interface RouteBuilderInterface {
+public interface RouteTypeInterface {
 
     String buildRoute(Route route);
 

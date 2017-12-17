@@ -1,7 +1,4 @@
 import entity.CivilStatus;
-import entity.Route;
-import entity.RouteTypes;
-import patterns.strategy.RouteBuilderInterface;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

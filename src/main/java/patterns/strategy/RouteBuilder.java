@@ -13,8 +13,8 @@ import java.util.ServiceLoader;
  * </p>
  */
 public class RouteBuilder {
-    private static final ServiceLoader<RouteBuilderInterface> LOADER =
-            ServiceLoader.load(RouteBuilderInterface.class,
+    private static final ServiceLoader<RouteTypeInterface> LOADER =
+            ServiceLoader.load(RouteTypeInterface.class,
                     RouteBuilder.class.getClassLoader());
 
     public RouteBuilder() {
@@ -27,8 +27,8 @@ public class RouteBuilder {
                 .orElse(route.type + "-" + System.currentTimeMillis());
     }
 
-    private static Optional<RouteBuilderInterface> lookupAppropriateRoute(final RouteTypes routeType) {
-        for (RouteBuilderInterface b : LOADER) {
+    private static Optional<RouteTypeInterface> lookupAppropriateRoute(final RouteTypes routeType) {
+        for (RouteTypeInterface b : LOADER) {
             if (b.recognize(routeType)) {
                 return Optional.of(b);
             }
