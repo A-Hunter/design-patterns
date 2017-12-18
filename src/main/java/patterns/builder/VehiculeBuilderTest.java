@@ -10,22 +10,22 @@ import patterns.builder.vehiculeTypes.Motocycle;
 public class VehiculeBuilderTest {
 
     public static void main(String[] args) {
-        VehiculeBuilder car = new Car();
+        Vehicule car = new Car();
         VehiculeBuilderImpl impl = new VehiculeBuilderImpl(car);
         impl.build();
-        Vehicule vehicule = car.getVehicule();
+        VehiculeParts vehicule = car.getVehicule();
         System.out.println(vehicule);
         /////////////////////////
-        VehiculeBuilder bus = new Bus();
+        Vehicule bus = new Bus();
         VehiculeBuilderImpl implBus = new VehiculeBuilderImpl(bus);
         implBus.build();
-        Vehicule vehicule2 = bus.getVehicule();
+        VehiculeParts vehicule2 = bus.getVehicule();
         System.out.println(vehicule2);
         /////////////////////////
-        VehiculeBuilder motocycle = new Motocycle();
+        Vehicule motocycle = new Motocycle();
         VehiculeBuilderImpl implMotocycle = new VehiculeBuilderImpl(motocycle);
         implMotocycle.build();
-        Vehicule vehicule3 = motocycle.getVehicule();
+        VehiculeParts vehicule3 = motocycle.getVehicule();
         System.out.println(vehicule3);
     }
 

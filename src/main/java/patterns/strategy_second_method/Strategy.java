@@ -5,5 +5,5 @@ package patterns.strategy_second_method;
  */
 public interface Strategy {
 
-    public void route(String argument);
+    void route(String argument);
 }

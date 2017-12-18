@@ -1,14 +1,14 @@
 package patterns.builder.vehiculeTypes;
 
+import patterns.builder.VehiculeParts;
 import patterns.builder.Vehicule;
-import patterns.builder.VehiculeBuilder;
 
 /**
  * Created by Ghazi Ennacer on 16/04/2017.
  */
-public class Bus implements VehiculeBuilder {
+public class Bus implements Vehicule {
 
-    Vehicule bus = new Vehicule("Bus");
+    VehiculeParts bus = new VehiculeParts("Bus");
 
     public Bus() {
     }
@@ -49,7 +49,7 @@ public class Bus implements VehiculeBuilder {
     }
 
     @Override
-    public Vehicule getVehicule() {
+    public VehiculeParts getVehicule() {
         return bus;
     }
 }

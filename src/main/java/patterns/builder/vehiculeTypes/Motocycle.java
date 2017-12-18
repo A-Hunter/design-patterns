@@ -1,14 +1,14 @@
 package patterns.builder.vehiculeTypes;
 
+import patterns.builder.VehiculeParts;
 import patterns.builder.Vehicule;
-import patterns.builder.VehiculeBuilder;
 
 /**
  * Created by Ghazi Ennacer on 16/04/2017.
  */
-public class Motocycle implements VehiculeBuilder {
+public class Motocycle implements Vehicule {
 
-    Vehicule motocycle = new Vehicule("Motocycle");
+    VehiculeParts motocycle = new VehiculeParts("Motocycle");
 
     public Motocycle() {
     }
@@ -49,7 +49,7 @@ public class Motocycle implements VehiculeBuilder {
     }
 
     @Override
-    public Vehicule getVehicule() {
+    public VehiculeParts getVehicule() {
         return motocycle;
     }
 }

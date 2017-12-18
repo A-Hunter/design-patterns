@@ -1,20 +1,18 @@
 package patterns.builder;
 
-import patterns.builder.vehiculeTypes.Car;
-
 /**
  * Created by Ghazi Ennacer on 16/04/2017.
  */
-public class VehiculeBuilderImpl {
+class VehiculeBuilderImpl {
 
-    private VehiculeBuilder vehiculeBuilder;
+    private Vehicule vehiculeBuilder;
 
-    public VehiculeBuilderImpl(VehiculeBuilder vehiculeBuilder){
+    VehiculeBuilderImpl(Vehicule vehiculeBuilder){
 
         this.vehiculeBuilder = vehiculeBuilder;
     }
 
-    public void build(){
+    void build(){
         vehiculeBuilder.createCarcass();
         vehiculeBuilder.createForce();
         vehiculeBuilder.createEngine();
